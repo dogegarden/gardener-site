@@ -32,6 +32,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Run SASS compiler
 
 To run SASS/SCSS you need to install the compiler
-run:
-`npm i -g sass` to download sass globally
-`sass --no-source-map --watch sass:styles` to run the sass compiler
+
+run: `npm i -g sass` to download sass globally 
+
+run: `sass --no-source-map --watch sass:styles` to run the sass compiler
