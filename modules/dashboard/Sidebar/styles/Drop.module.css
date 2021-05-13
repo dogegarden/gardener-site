@@ -1,0 +1,56 @@
+.sidebarLink {
+  display: flex;
+  color: #dddddd;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+  height: 60px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebarLinkActive {
+  color: #c23c3c;
+}
+
+
+.sidebarLink:hover {
+    background: #262627;
+    border-left: 4px solid #c23c3c;
+    cursor: pointer;
+}
+
+.sidebarLabel {
+    margin-left: 16px;
+    transition: 0.2s;
+
+}
+
+.sidebarLabel:hover {
+  margin-left: 20px;
+}
+
+.sidebarLabelActive {
+  margin-left: 20px;
+}
+
+.dropdownLink {
+  background: #1c1c1e;
+  height: 60px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px; 
+}
+
+.dropdownLinkActive {
+  background: #262627;
+}
+
+.dropdownLink:hover {
+    background: #262627;
+    cursor: pointer;
+}
