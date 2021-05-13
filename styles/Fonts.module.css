@@ -1,0 +1,7 @@
+@font-face {
+    font-family: Inter;
+    src: url('../Assets/fonts/Inter-Medium.ttf');
+}
+.InterM {
+    font-family: Inter;
+}
