@@ -1,7 +1,18 @@
 @font-face {
-    font-family: Inter;
+    font-family: InterM;
     src: url('../Assets/fonts/Inter-Medium.ttf');
 }
+@font-face {
+    font-family: InterSB;
+    src: url('../Assets/fonts/Inter-SemiBold.ttf');
+}
+
+/* Medium */
 .InterM {
-    font-family: Inter;
+    font-family: InterM;
+}
+/* Semi Bold */
+.InterSB {
+    font-family: InterSB;
+
 }

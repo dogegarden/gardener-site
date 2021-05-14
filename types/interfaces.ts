@@ -7,6 +7,7 @@ export interface Room {
   speakerCount: number;
   botCount: number;
   upTime: string;
+  title: string
 //Users allowed to manipulate songs
   AuxHost: User[];
 }

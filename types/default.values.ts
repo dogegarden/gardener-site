@@ -13,6 +13,7 @@ export const DashboardPropDefaultVal: DashboardPropType = {
     },
     roomInfo: {
         id:'',
+        title: 'Code And Chill',
         listenerCount: 0,
         speakerCount: 20,
         botCount:0,

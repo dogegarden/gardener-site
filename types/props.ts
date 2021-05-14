@@ -1,4 +1,4 @@
-import { Room, ClientAccount } from "./interfaces";
+import { Room, ClientAccount, User } from "./interfaces";
 
 // PAGE PROPS
 
@@ -27,3 +27,6 @@ export interface NavBarProps {
     profileImgUrl: string
     hasPremium: boolean
 }
+
+export interface RoomInfoCardProps extends Room {}
+

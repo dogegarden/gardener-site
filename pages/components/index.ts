@@ -1,2 +1,5 @@
 export { SearchBar } from './searchBar'
 export { Nav } from './Nav'
+export { LeftPannel } from './left.pannel'
+export { DashBoardContent } from './dashboard.content'
+export { RoomInfoCard } from './cards'
