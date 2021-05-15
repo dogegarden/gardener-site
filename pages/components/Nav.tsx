@@ -8,11 +8,11 @@ export const Nav: FunctionComponent<NavBarProps> = ({
   hasPremium,
 }): JSX.Element => {
   return (
-    <div className='group'>
+    <div className="group">
       <div className="pt-10 border-black ">
         <div className="flex justify-end ...">
           {!hasPremium && (
-            <section className="text-green-lime pt-3 pl-10  group-hover:animate-bounce">
+            <section className="text-green-lime transition duration-200 ease-in transform pt-3 pl-10 opacity-100  group-hover:opacity-60">
               <label className={Styles.InterM}>Get Premium</label>
             </section>
           )}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
-import { StaticDashboardData } from '../../Request/static'
+import { StaticDashboardData } from '../socket/static'
 import { DashboardPropType } from "../../types";
 
 const DashboardContext = createContext(null);

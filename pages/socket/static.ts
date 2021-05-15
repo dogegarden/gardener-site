@@ -1,4 +1,4 @@
-import { DashboardProps, DashboardPropType } from "../types";
+import { DashboardProps, DashboardPropType } from "../../types";
 export const StaticDashboardData: DashboardPropType = {
   clientAccount: {
     id: "001",

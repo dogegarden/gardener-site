@@ -6,8 +6,9 @@ import {
 } from "../types";
 import { DashboardContext, DashboardProvider } from "./context/index";
 import { Nav, LeftPannel, DashBoardContent } from "./components";
-import { fetchDashboard } from "../Request";
+import { fetchDashboard } from "./socket";
 import { createContext, useState, useContext, useEffect } from "react";
+import { establishConnection } from './socket'
 
 // Contexr To Distribute Data Without Prop Drilling
 
@@ -20,7 +21,7 @@ const Dashboard: FunctionComponent<DashboardProps> = ({
   const [didLoad, setDidLoad] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log("setting this ", content);
+    establishConnection()
     setContent(content);
     setDidLoad(true);
   }, []);

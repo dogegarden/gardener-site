@@ -7,14 +7,14 @@ import { useEffect } from "react";
 import Styles from "../../styles/Fonts.module.css";
 import { useState } from "react";
 import { User } from "../../types";
-
+import { RemoveButtonSm } from './buttons'
 // Dj Compnent, Displays All Djs
 const UserRow: FunctionComponent<User> = ({
   displayName,
   profileImgUrl,
 }): JSX.Element => {
   return (
-    <div className="flex pl-3">
+    <div className=" group flex pl-3">
       <section className="">
         <Image
           className="rounded-full"
@@ -23,9 +23,12 @@ const UserRow: FunctionComponent<User> = ({
           height={25}
         />
       </section>
-      <section className="text-gray-light text-xl pl-6">
+      <div className=" flex justify-items-center text-gray-light text-xl pl-6">
         <label>{displayName}</label>
-      </section>
+        <section className='pl-4 opacity-0 transition duration-200 ease-in transfor group-hover:opacity-100 '>
+        <RemoveButtonSm action={()=>console.log('removed!')} />
+        </section>
+      </div>
     </div>
   );
 };
@@ -36,6 +39,7 @@ const DJCard = (): JSX.Element => {
     roomInfo: { AuxHost },
   } = content as DashboardPropType;
   const [hasDj, setHasDj] = useState<boolean>();
+
 
   useEffect(() => {
     AuxHost.length > 0 ? setHasDj(true) : setHasDj(false);
@@ -111,3 +115,11 @@ export const RoomInfoCard = (): JSX.Element => {
     </div>
   );
 };
+
+export const AudioController = () => {
+  const [track, setTrack] = useState<string>();
+
+    useEffect(() => {
+      
+    },[])
+}

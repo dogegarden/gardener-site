@@ -37,6 +37,9 @@ module.exports = {
         ...range
       },
       colors: {
+        red: {
+          materialRed: '#C23C3C'
+        },
         green: {
           lime: "#68BB66",
         },
@@ -49,6 +52,9 @@ module.exports = {
           materialLightBlue: '#242428'
         }
       },
+      screens: {
+        '3xl': '2000px'
+      }
     },
   },
   variants: {

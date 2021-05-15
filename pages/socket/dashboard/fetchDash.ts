@@ -1,5 +1,5 @@
- import { DashboardProps, DashboardPropType } from '../types'
-import { StaticDashboardData } from './static'
+ import { DashboardProps, DashboardPropType } from '../../../types'
+import { StaticDashboardData } from '../static'
 
 /**
  * *Queries All Dashboard Content
